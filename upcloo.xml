@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="content">
+	<name>UpCloo Joomla Plugin</name>
+	<creationDate>20/11/2011</creationDate>
+	<author>Walter Dal Mut</author>
+	<authorEmail>walter.dalmut@gmail.com</authorEmail>
+	<authorUrl>http://www.upcloo.com</authorUrl>
+	<copyright>Copyright Walter Dal Mut, Gabriele Mittica</copyright>
+	<license>License, MIT</license>
+	<version>0.1</version>
+	<description>
+		UpCloo is a cloud based and fully hosted indexing engine 
+		that helps you to create incredible and automatic correlations 
+		between contents of your website.
+	</description>
+    <files>
+        <filename plugin="upcloo">upcloo.php</filename>
+    </files>
+	
+</extension>
