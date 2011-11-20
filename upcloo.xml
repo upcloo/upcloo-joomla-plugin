@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="1.7" type="plugin" group="content">
-    <name>UpCloo Joomla Plugin</name>
+    <name>plg_content_upcloo</name>
     <creationDate>20/11/2011</creationDate>
     <author>Walter Dal Mut</author>
     <authorEmail>walter.dalmut@gmail.com</authorEmail>

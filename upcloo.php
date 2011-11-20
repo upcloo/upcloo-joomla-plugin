@@ -29,11 +29,10 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 
 jimport( 'joomla.plugin.plugin' );
 
-class upcloo extends JPlugin {
+class plgContentUpcloo extends JPlugin {
 
-    function upcloo( &$subject, $params )
+    public function onContentBeforeDisplay($context, &$row, &$params, $page=0)    
     {
-        parent::__construct( $subject, $params );
-        die("OK");
+        
     }
 }
