@@ -16,4 +16,10 @@
     <files>
         <filename plugin="upcloo">upcloo.php</filename>
     </files>
+    <languages>
+        <language tag="en-GB">en-GB.plg_content_upcloo.ini</language>
+        <language tag="en-GB">en-GB.plg_content_upcloo.sys.ini</language>
+        <language tag="it-IT">it-IT.plg_content_upcloo.ini</language>
+        <language tag="it-IT">it-IT.plg_content_upcloo.sys.ini</language>
+    </languages>
 </extension>

@@ -29,10 +29,42 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 
 jimport( 'joomla.plugin.plugin' );
 
-class plgContentUpcloo extends JPlugin {
+class plgContentUpcloo extends JPlugin 
+{
+    const FRONT_END_POINT = 'http://%s.update.upcloo.com';
+    const REPOSITORY_END_POINT = 'http://repository.upcloo.com/%s';
 
-    public function onContentBeforeDisplay($context, &$row, &$params, $page=0)    
+    public function __construct(&$subject, $config)
     {
+        parent::__construct($subject, $config);
         
+//         die(var_dump($config));
+        
+        $lang = JFactory::getLanguage();
+        $ret = $lang->load('plg_content_upcloo');
+        die(var_dump($ret));
+    }
+    
+    public function onContentBeforeDisplay($context, &$article, &$params, $page=0)    
+    {
+        $id = $article->id;
+        
+//         die(var_dump($article));
+        
+        $article->text .= '<h2>'.JText::_( 'PLG_CONTENT_UPCLOO_RESULT' ).'</h2>';
+        
+        $this->_publishToUpCloo($article);
+    }
+    
+    /**
+     * Check if this content is to send to UpCloo.
+     * 
+     * @param object $article
+     */
+    private function _publishToUpCloo($article)
+    {
+        if ($article->published == '1') {
+            //Check if you have to send to UpCloo
+        }
     }
 }
